@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/bill_amount"
+    />
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/bill_total" android:inputType="numberDecimal">
+    <requestFocus></requestFocus>
+</EditText>
+<TextView android:text="@string/precent" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView4" android:text="Tip Amount" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView5" android:text="Total Amount" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView2" android:text="@string/thirteen" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="200px" android:id="@+id/tip_13_amount"></EditText>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="200px" android:id="@+id/total_13_amount"></EditText>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView01" android:text="@string/fifteen" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tip_15_amount"></EditText>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/total_15_amount"></EditText>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView02" android:text="@string/seventeen" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tip_17_amount"></EditText>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/total_17_amount"></EditText>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView02" android:text="@string/twenty" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tip_20_amount"></EditText>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/total_20_amount"></EditText>
+    </TableRow>
+    <TableRow android:id="@+id/TableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView03" android:text="Custom" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tip_custom_amount"></EditText>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/total_custom_amount"></EditText>
+    </TableRow>
+</TableLayout>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <SeekBar android:layout_weight="1" android:id="@+id/custom_precentage" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100"></SeekBar>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/custome_precent_value" android:width="100px" android:text="18%"></TextView>
+</LinearLayout>
+</LinearLayout>
